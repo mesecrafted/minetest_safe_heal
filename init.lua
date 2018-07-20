@@ -7,7 +7,7 @@ end
 if(minetest.setting_getbool("enable_damage") == true) then
 	minetest.register_chatcommand("healme", {
 		description = "usage: \"/heal <name>\" desciption: heals <name> to 20 hp",
-		privs = {heal=true},
+		privs = {selfheal=true},
 		func = function(name)
 			local player = minetest.get_player_by_name(name)
 			if not player then
