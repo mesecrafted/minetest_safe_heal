@@ -1,11 +1,11 @@
 if(minetest.setting_getbool("enable_damage") == true) then
-	minetest.register_privilege("heal", {
+	minetest.register_privilege("selfheal", {
 		description = "Allows player to set own hp to 20 with /heal",
 		give_to_singleplayer = true
 	})
 end
 if(minetest.setting_getbool("enable_damage") == true) then
-	minetest.register_chatcommand("heal", {
+	minetest.register_chatcommand("healme", {
 		description = "usage: \"/heal <name>\" desciption: heals <name> to 20 hp",
 		privs = {heal=true},
 		func = function(name)
