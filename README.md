@@ -18,4 +18,6 @@ License
 -------
 
 
-none
+Copyright (C) 2018 Aiden Stoudt
+
+Licensed under the MIT License
